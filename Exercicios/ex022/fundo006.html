@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            height: 98vh;
-            background-color: black;
+            height: 100vh;
+           /* background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
-            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment */
+                
+                /*o Size ate ó dia de hoje não é aceito na Shorthand de background, deve se colocar ele fora da Shorthand*/
+
+                background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+                background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid rgba(0, 0, 255, 0.321);

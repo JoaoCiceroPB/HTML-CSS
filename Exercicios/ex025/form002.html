@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Teste de Formulário</h1>
     <form autocomplete="on" action="cadastro.php" method="post">
         <p>
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" minlength="4" maxlength="15" size="10" placeholder="Digite o usuário" required autocomplete="username">
+            <input type="text" name="usu" id="iusu" minlength="4" maxlength="15" size="10"
+                placeholder="Digite o usuário" required autocomplete="username">
         </p>
         <p>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="12" placeholder="Digite a senha" required autocomplete="current-password">
+            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="12"
+                placeholder="Digite a senha" required autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
@@ -41,4 +45,5 @@
         </p>
     </form>
 </body>
+
 </html>

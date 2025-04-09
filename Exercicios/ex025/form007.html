@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="João C S Assis">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="João C S Assis" />
     <title>Formulário</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <div>
-            <label for="iest">Estado:</label>
-            <select name="Estado" id="iest">
+      <div>
+        <label for="iest">Estado:</label>
+        <select name="Estado" id="iest">
+          <option value="" selected>--- Escolha ---</option>
+          <optgroup label="Região Sudeste">
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+          </optgroup>
 
-                <option value="" selected>--- Escolha ---</option>
-                <optgroup label="Região Sudeste">
-                    <option value="MG">Minas Gerais</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">São Paulo</option>
-                </optgroup>
+          <optgroup label="Região Nordeste">
+            <option value="MA">Maranhão</option>
+            <option value="PE">Pernambuco</option>
+            <option value="RN">Rio Grande do Norte</option>
+          </optgroup>
+        </select>
+      </div>
 
-                <optgroup label="Região Nordeste">
-                    <option value="MA">Maranhão</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                </optgroup>
+      <div>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="Prof" id="iprof" list="lstprof" />
+        <datalist id="lstprof">
+          <option value="ADM">Administrador</option>
+          <option value="CONT">Contador</option>
+          <option value="DEV">Desenvolvedor</option>
+          <option value="PROF">Professor</option>
+        </datalist>
+      </div>
 
-            </select>
-        </div>
+      <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
 
-        <div>
-            <label for="iprof">Profissão:</label>
-            <input type="text" name="Prof" id="iprof" list="lstprof">
-            <datalist id="lstprof">
-                <option value="ADM">Administrador</option>
-                <option value="CONT">Contador</option>
-                <option value="DEV">Desenvolvedor</option>
-                <option value="PROF">Professor</option>
-            </datalist>
-        </div>
-
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </div>
-
-        <div>
-            <label for="imsg">Mensagem:</label><br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-        </div>
+      <div>
+        <label for="imsg">Mensagem:</label><br />
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+      </div>
     </form>
-</body>
+  </body>
 </html>

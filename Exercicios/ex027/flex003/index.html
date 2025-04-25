@@ -8,12 +8,19 @@
     <style>
         div.conteiner {
             background-color: salmon;
-            height: 500px;
+            height: 200px;
+
+            /* flex-direction: row, column, row-reverse, column-reverse */
+
+            /*flex-wrap: nowrap, wrap, wrap-reverse */
+
+            /* shorhand = flex-direction + flex-wrap = flex-flow = valores do direction + wrap */
 
             display: flex;
-             /* shorhand = flex-direction + flex-wrap = flex-flow = valores do direction e wwrap */
-            flex-flow: column nowrap;
+             
+            flex-flow: row nowrap;
             justify-content: center;
+            
         }
 
         div.item {

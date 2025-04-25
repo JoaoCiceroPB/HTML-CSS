@@ -8,10 +8,12 @@
     <style>
         div.conteiner {
             background-color: salmon;
+            height: 500px;
 
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+             /* shorhand = flex-direction + flex-wrap = flex-flow = valores do direction e wwrap */
+            flex-flow: column nowrap;
+            justify-content: center;
         }
 
         div.item {

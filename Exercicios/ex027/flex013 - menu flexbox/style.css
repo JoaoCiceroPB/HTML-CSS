@@ -19,12 +19,39 @@ header {
     padding: 10px;
 }
 
-h1 {
-    border: 1px dotted black;
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
+header > h1 {
     border: 1px dotted black;
+    flex: 0 0 200px;
+}
+
+header > nav {
+    border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
 }
 
 main {

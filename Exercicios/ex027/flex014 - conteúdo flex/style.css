@@ -16,6 +16,10 @@ p, h1, h2 {
     text-align: justify;
 }
 
+h1, h2 {
+    line-height: 1em;
+}
+
 header, section.normal {
     padding: 20px;
 
@@ -24,4 +28,40 @@ header, section.normal {
 section.flex-content {
     background-color: rgb(150, 150, 150);
     padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text {
+    flex: 1 1 400px;
+}
+
+article > div.media {
+    flex: 1 0 400px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    
+
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
 }

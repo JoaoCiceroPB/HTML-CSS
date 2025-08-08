@@ -10,7 +10,7 @@
   display: grid;
   grid-template-rows: 80px 40px 1fr 40px;
   grid-template-columns: 1fr 150px;
-  gap: 5px
+  gap: 5px;
 }
 
 .caixa {
@@ -32,14 +32,10 @@
   grid-area: 3 / 1 / 4 / 2;
 }
 
-#secundario{
+#secundario {
   grid-area: 3 / 2 / 4 / 3;
 }
 
-#rodape{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 3;
+#rodape {
   grid-area: 4 / 1 / 5 / 3;
 }
